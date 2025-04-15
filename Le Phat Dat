@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Đơn Giản</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Chào mừng đến với trang web của tôi</h1>
+    <p>Đây là một trang web đơn giản sử dụng HTML, CSS và JavaScript.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Giới thiệu</h2>
+      <p>Mình tên là Nguyễn Văn A. Mình đang học lập trình web và đây là sản phẩm đầu tiên của mình.</p>
+    </section>
+
+    <section>
+      <h2>Nhấn nút để xem tương tác</h2>
+      <button onclick="showMessage()">Nhấn vào đây</button>
+      <p id="message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Nguyễn Văn A</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+function showMessage() {
+  const messageElement = document.getElementById("message");
+  messageElement.textContent = "Cảm ơn bạn đã nhấn nút! 😊";
+}
+
